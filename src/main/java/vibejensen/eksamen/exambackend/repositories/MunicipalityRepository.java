@@ -31,7 +31,6 @@ public interface MunicipalityRepository extends JpaRepository<Municipality, Inte
     *
     * */
 
-
     /* ParisRepo
     @Query("SELECT rNumber.number FROM RNumber rNumber JOIN rNumber.parish p WHERE rNumber.parish.id = ?1 and rNumber.date = ?2")
     Optional<Double> findCurrentRNumber(int parishId, Date date);

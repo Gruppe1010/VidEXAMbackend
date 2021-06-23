@@ -29,14 +29,18 @@ public class Parish{
     @NotNull
     @Column(unique = true)
     private String name;
+
     @NotNull
     @ManyToOne
     @JoinColumn(name = "id_municipality")
     private Municipality municipality;
+
     @NotNull
     private boolean isOnLockdown;
+
     @OneToMany(mappedBy = "lockedDownParish", cascade = CascadeType.ALL)
     private List<Lockdown> lockdowns;
+
     @NotNull
     @OneToMany(mappedBy = "parish", cascade = CascadeType.ALL)
     private List<RNumber> rNumbers;

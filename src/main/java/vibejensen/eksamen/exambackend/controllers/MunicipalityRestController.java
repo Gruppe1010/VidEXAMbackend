@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import vibejensen.eksamen.exambackend.models.dto.ShowMunicipalityDTO;
-import vibejensen.eksamen.exambackend.models.dto.ShowParishDTO;
 import vibejensen.eksamen.exambackend.services.MunicipalityService;
 
 import java.util.ArrayList;
@@ -21,17 +20,13 @@ public class MunicipalityRestController {
     @Autowired
     MunicipalityService municipalityService;
 
-
     @GetMapping("/municipalities")
     public ResponseEntity<ArrayList<ShowMunicipalityDTO>> retrieveAllMunicipalities(){
 
         try {
-
             ArrayList<ShowMunicipalityDTO> municipalities = municipalityService.findAllMunicipalities();
 
-
             if(municipalities != null){
-
                 return new ResponseEntity<>(municipalities, HttpStatus.OK);
             }
 

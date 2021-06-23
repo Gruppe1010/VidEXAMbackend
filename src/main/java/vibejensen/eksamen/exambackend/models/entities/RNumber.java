@@ -29,7 +29,6 @@ public class RNumber {
     @Temporal(TemporalType.DATE)
     private Date date;
 
-
     @NotNull
     @ManyToOne//(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_parish")

@@ -263,7 +263,6 @@ public class ParishService {
         //hvis der ER nogle id'er - slet dem fra rep
         rNumberIds.ifPresent(integers -> integers.forEach(integer -> rNumberRepository.deleteRNumberById(integer)));
 
-
         // vi sletter parish-obj
         parishRepository.deleteById(parishId);
 

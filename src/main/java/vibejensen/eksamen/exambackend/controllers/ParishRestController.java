@@ -9,17 +9,12 @@ import org.springframework.web.bind.annotation.*;
 import vibejensen.eksamen.exambackend.models.dto.CreateParishDTO;
 import vibejensen.eksamen.exambackend.models.dto.ShowParishDTO;
 import vibejensen.eksamen.exambackend.models.dto.StringResponse;
-import vibejensen.eksamen.exambackend.models.dto.UpdateParishDTO;
-import vibejensen.eksamen.exambackend.models.entities.Lockdown;
-import vibejensen.eksamen.exambackend.models.entities.Municipality;
-import vibejensen.eksamen.exambackend.models.entities.Parish;
 import vibejensen.eksamen.exambackend.services.LockdownService;
 import vibejensen.eksamen.exambackend.services.MunicipalityService;
 import vibejensen.eksamen.exambackend.services.ParishService;
 import vibejensen.eksamen.exambackend.services.RNumberService;
 
 import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 @CrossOrigin(value = "*")

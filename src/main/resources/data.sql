@@ -1,7 +1,7 @@
 
 
-
 /*
+
 INSERT INTO municipalities (code, name) VALUES (101, 'Københavns');
 INSERT INTO municipalities (code, name) VALUES (165, 'Albertslund');
 INSERT INTO municipalities (code, name) VALUES (201, 'Allerød');
@@ -144,11 +144,10 @@ INSERT INTO parishes (code, name, id_municipality, is_on_lockdown) VALUES (	6016
 INSERT INTO parishes (code, name, id_municipality, is_on_lockdown) VALUES (	6019	,'	Bjerring 	',	13,false);
 INSERT INTO parishes (code, name, id_municipality, is_on_lockdown) VALUES (	6020	,'	Hjermind 	',	13,false);
 
+
+
+
 */
-
-
-
-
 
 
 

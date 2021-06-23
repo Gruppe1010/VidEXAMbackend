@@ -18,21 +18,19 @@ import java.util.List;
 @AllArgsConstructor
 @Table(name="municipalities")
 public class Municipality {
-
+    // {...} // andre attributter
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @NotNull
-    @Column(unique = true)
+    // @NotNull // bruges hvis vi IKKE genererer db automatisk
+    @Column(unique = true, nullable = false) // bruges hvis vi genererer automatisk
     private int code;
 
-    @NotNull
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String name;
 
-    @NotNull
     @OneToMany(mappedBy = "municipality", cascade = CascadeType.ALL)
     private List<Parish> parishes;
 
